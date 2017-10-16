@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">人脸注册客户端</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <!-- LoginActivity -->
+    <string name= "LoginActivity_companyID">请输入账号!</string>
+    <string name= "LoginActivity_pswd">请输入密码!</string>
+    <string name= "network_invalid">亲，您的网络不给力，请检查网络！</string>
+    <!-- RegisterActivity -->
+	<string name="RegisterActivity_et_name">请输入姓名！</string>
+	<string name="RegisterActivity_et_id">请输入编号！</string>
+	<string name="radioBtn_male">男</string>
+	<string name="radioBtn_female">女</string>
+	<!-- 访问服务端 -->
+	<string name="common_error">数据处理失败，请联系客服</string>
+	<string name="data_error">返回数据错误</string>
+	<string name="connect_host_fail">连接服务器失败</string>
+	
+</resources>

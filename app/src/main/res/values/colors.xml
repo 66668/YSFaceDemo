@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bar_line">#bbbbbb</color> <!-- photo_choose.xml：导航条的灰色分割线 -->
+    <color name="transparent">#00000000</color><!-- LoadingDialog中调用 -->
+</resources>

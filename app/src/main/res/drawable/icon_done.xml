@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<!-- photo_clip_topbar.xml调用 icon_done_press和icon_done_default是图片-->
+    <item android:drawable="@drawable/icon_done_press" android:state_pressed="true"></item>
+    <item android:drawable="@drawable/icon_done_default" android:state_pressed="false"></item>
+
+</selector>

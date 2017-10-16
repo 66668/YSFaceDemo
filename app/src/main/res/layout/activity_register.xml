@@ -1,0 +1,378 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/back" >
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="人脸注册"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imgUserHeader"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/login_logo" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:weightSum="1" >
+
+                <!-- 头像 -->
+
+                <ImageView
+                    android:id="@+id/imageView_picture"
+                    android:layout_width="360dp"
+                    android:layout_height="360dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/face" />
+            </LinearLayout>
+
+            <!-- 上传照片 -->
+
+            <LinearLayout
+                android:id="@+id/layoutBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout01"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2" />
+
+                <Button
+                    android:id="@+id/Register_btn_snapshot"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="0.6"
+                    android:background="@drawable/btnbackground"
+                    android:text="上传照片"
+                    android:textSize="22sp"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/regist_1_02_1_01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <!-- 空白布局 -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.07" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout004"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/layoutBtn"
+                    android:layout_weight="0.86"
+                    android:background="@drawable/infobackground"
+                    android:orientation="vertical"
+                    android:weightSum="1" >
+
+                    <!-- 姓名 -->
+
+                    <LinearLayout
+                        android:id="@+id/layoutName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:id="@+id/tvName"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.23"
+                            android:gravity="right"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:text="姓名"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/RegisterActivity_et_name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_weight="0.66"
+                            android:gravity="center_vertical"
+                            android:hint="@string/RegisterActivity_et_name"
+                            android:paddingLeft="20dp"
+                            android:singleLine="true"
+                            android:textSize="22sp" >
+                        </EditText>
+                    </LinearLayout>
+
+                    <!-- 编号 -->
+
+                    <LinearLayout
+                        android:id="@+id/layoutNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:id="@+id/tvNumber"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.23"
+                            android:gravity="right"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:text="编号"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/RegisterActivity_et_strUserIDNumber"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_weight="0.66"
+                            android:gravity="center_vertical"
+                            android:hint="@string/RegisterActivity_et_id"
+                            android:paddingLeft="20dp"
+                            android:singleLine="true"
+                            android:textSize="22sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutNumbers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:id="@+id/tvaaa"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.23"
+                            android:gravity="right"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:text="信息1"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/aaaa"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_weight="0.66"
+                            android:gravity="center_vertical"
+                            android:hint="@string/RegisterActivity_et_id"
+                            android:paddingLeft="20dp"
+                            android:singleLine="true"
+                            android:textSize="22sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutNumbersa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:id="@+id/tvaaaa"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.23"
+                            android:gravity="right"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:text="信息2"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/aaaaa"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_weight="0.66"
+                            android:gravity="center_vertical"
+                            android:hint="@string/RegisterActivity_et_id"
+                            android:paddingLeft="20dp"
+                            android:singleLine="true"
+                            android:textSize="22sp" />
+                    </LinearLayout>
+
+                    <!-- 性别 -->
+
+                    <LinearLayout
+                        android:id="@+id/layoutGender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.32"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:id="@+id/tvGender"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.23"
+                            android:gravity="right"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:text="性别"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp" />
+
+                        <RadioGroup
+                            android:id="@+id/registerActivity_radiogroup"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.66"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingLeft="20dp"
+                            android:singleLine="true" >
+
+                            <RadioButton
+                                android:id="@+id/radioBtn_male"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.33"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:text="@string/radioBtn_male"
+                                android:textColor="#FFFFFF"
+                                android:textSize="22sp" />
+
+                            <RadioButton
+                                android:id="@+id/radioBtn_female"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.33"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:text="@string/radioBtn_female"
+                                android:textColor="#FFFFFF"
+                                android:textSize="22sp" />
+                        </RadioGroup>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.07" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+            </LinearLayout>
+            
+			<!-- 注册 -->
+            <LinearLayout
+                android:id="@+id/register_1_02_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/regist_1_02_1_01"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2" />
+
+                <Button
+                    android:id="@+id/Register_btn_register"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="0.6"
+                    android:background="@drawable/btnbackground"
+                    android:text="注册"
+                    android:textSize="22sp"
+                    android:textColor="#ffffff"
+                     />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
